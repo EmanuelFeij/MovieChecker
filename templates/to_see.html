@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seen</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="./seen.html">Seen Movies</a>
+        </li>
+        <li>
+            <a href="./to_see.html">Movies to see</a>
+        </li>
+    </ul>
+    <h1>Movies that i have to seen</h1>
+    <h3>Add Movie</h3>
+    <form action="submit" method="post">
+        <label for="movie">Movie Name:</label>
+        <input type="text" name="movie">
+    </form>
+    <ul>
+        <li>{{.name}}</li>
+    </ul>
+</body>
+</html>
