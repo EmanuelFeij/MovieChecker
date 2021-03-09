@@ -9,15 +9,17 @@
 <body>
     <ul>
         <li>
-            <a href="./seen.html">Seen Movies</a>
+            <a href="./seen">Seen Movies</a>
         </li>
         <li>
-            <a href="./to_see.html">Movies to see</a>
+            <a href="./tosee">Movies to see</a>
         </li>
     </ul>
     <h1>Movies i have seen</h1>
-    <ul>
-        <li>{{.name}}</li>
-    </ul>
+    {{ range .}}
+    <div>
+        {{ . }}
+    </div>
+    {{ end }}
 </body>
 </html>
