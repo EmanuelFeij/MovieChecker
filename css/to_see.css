@@ -1,0 +1,54 @@
+body {
+    width: 70%;
+    position:absolute;
+    left: 20%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+
+}
+
+#topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+    
+    list-style: none;
+    font-size: large;
+}
+
+#topBar li a  {
+    text-decoration: none;
+    color:white;
+    border-radius: 3px;
+    background-color:black;
+}
+
+#topBar li a:hover  {
+    text-decoration: none;
+    color:white;
+    background-color:black;
+    border-radius: 3px;
+
+}
+
+
+
+#movieAdder {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(78, 78, 218);
+}
+
+#movieSeen {
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(78, 78, 218);
+}

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/to_see.css">
     <title>Seen</title>
 </head>
 <body>
-    <ul>
+    <ul id="topBar">
         <li>
             <a href="./seen">Seen Movies</a>
         </li>
@@ -15,14 +16,31 @@
             <a href="./tosee">Movies to see</a>
         </li>
     </ul>
-    <h1>Movies that i have to seen</h1>
-    <h3>Add Movie</h3>
-    <form action="submit" method="post">
-        <label for="movie">Movie Name:</label>
-        <input type="text" name="movie">
-    </form>
-    <ul>
-        
-    </ul>
+
+    <h3>Add a Movie That You To See</h3>
+    <div id="movieAdder">
+        <form method="post" id="add-movie">
+            <label for="movie">Movie Name:</label>
+            <input type="text" name="movie">
+            <input type="submit" name="submit" value="To See">
+        </form>
+    </div>
+
+    <h3>Add Movie That was Seen</h3>
+    <div id="movieSeen">
+        <form method="post" id="mId">
+            <select name="movies" id="selectedMovie">
+                {{ range .}}
+                <option value="{{.}}">
+                    {{ . }}
+                </option>
+                {{ end }}
+            </select>
+            <input type="submit" name="submit" value="Add a Movie">
+        </form>
+    </div>
+    
+
+
 </body>
 </html>
