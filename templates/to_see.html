@@ -17,7 +17,7 @@
         </li>
     </ul>
 
-    <h3>Add a Movie That You To See</h3>
+    <h3>Add a Movie That Want You To See</h3>
     <div id="movieAdder">
         <form method="post" id="add-movie">
             <label for="movie">Movie Name:</label>
@@ -29,14 +29,17 @@
     <h3>Add Movie That was Seen</h3>
     <div id="movieSeen">
         <form method="post" id="mId">
-            <select name="movies" id="selectedMovie">
+            
+            <select name="movies" id="dropDownSeen">
                 {{ range .}}
                 <option value="{{.}}">
                     {{ . }}
                 </option>
                 {{ end }}
             </select>
-            <input type="submit" name="submit" value="Add a Movie">
+
+        
+            <input type="submit" name="submit" value="Movie Seen" id="submitBtn">
         </form>
     </div>
     
